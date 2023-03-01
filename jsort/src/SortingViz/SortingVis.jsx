@@ -16,7 +16,7 @@ export default class SortingViz extends React.Component {
   // taking array elements and allowing duplicates to make sorting realistic
   resetArray() {
     const array = [];
-    for (let i = 0; i < 500; i++) {
+    for (let i = 0; i < 100; i++) {
       array.push(randomIntFromInterval(25, 700));
     }
     this.setState({array});
