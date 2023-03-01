@@ -1,0 +1,64 @@
+.container{
+    /* display: flex; */
+    /* position: absolute; */
+    /* top: 50px; */
+    /* left: 100px; */
+    /* bottom: 200px; */
+    /* right: 50px; */
+    /* color: rgb(0, 0, 0); */
+    height: -90vh;
+    width: 98vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    perspective: 2500px;
+    transform: scale(1);
+    /* margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px; */
+    /* margin-right: -25px;
+    margin-left : 200px;
+    margin-bottom: 25px; */
+    transition: transform 2s ease 0s;
+}
+
+.array-bars {
+    /* background-color: rgb(204, 157, 125); */
+    width: 1.8px;
+    height: 20px; 
+    margin: 0 0.5px;
+    display: inline-block; 
+    /* display: flex; 
+    /* align-items: flex-end;  */
+    /* justify-content: center; 
+    height: 85%;
+    /* width: 2px; */
+    /* transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); 
+    transition: transform 2s ease 2s; */
+     
+    height: 59%;
+    width: 1%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.25s ease 0s;
+
+    background: linear-gradient(0deg,#d4d113 50%,#aad388 85%,#94978d);
+    box-shadow: 1px 0 0 0 #c94e10;
+    /*animation: progress-bar 5s infinite ease-in; */
+}
+.array-bars:hover {
+    background-color: rgb(246, 4, 4);
+    size: 120%;
+ }
+/* @keyframes progress-bar  {
+    0% { width: 20%; }
+    100% { width: 100%; }
+} */
+.Op-buttons{
+    position: relative;
+    bottom: 0;
+}
+.Sort-Buttons {
+display: flex;
+
+}
