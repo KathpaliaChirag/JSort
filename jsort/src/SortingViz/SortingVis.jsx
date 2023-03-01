@@ -1,5 +1,6 @@
 import React from "react";
 import "./SortingViz.css";
+// import logo from './logo.png';
 
 export default class SortingViz extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ export default class SortingViz extends React.Component {
   resetArray() {
     const array = [];
     for (let i = 0; i < 100; i++) {
-      array.push(randomIntFromInterval(25, 700));
+      array.push(randomIntFromInterval(25, 500));
     }
     this.setState({array});
   }
@@ -26,10 +27,21 @@ export default class SortingViz extends React.Component {
     const {array} = this.state;
 
     return (
-      <div className="Outer">
-      <div className="Op-Buttons">   
-      <button onClick={() => this.resetArray()}> Reset Array </button>  
+      <div className="body">
+      <div className="header">
+      <div className="Logo">
+        {/* <img src="/jsort/src/assets/images/logo.png" alt="Logo" /> */}
+        {/* <img src="{logo}" alt="Logo" /> */}
+        <h1>JSort</h1>
       </div>
+        <div className="Op-Buttons">   
+        <button onClick={() => this.resetArray()}> Reset Array </button>  
+        </div>
+
+      </div>
+
+
+     <div className="content">
       <div className="Sort-Buttons">   
       <button onClick={() => this.resetArray()}> Merge Sort </button>  
       <button onClick={() => this.resetArray()}> Selection Sort </button>  
@@ -49,7 +61,7 @@ export default class SortingViz extends React.Component {
           // </div>
          ))}
     </div>
-    
+    </div>
     </div>
     );
   }

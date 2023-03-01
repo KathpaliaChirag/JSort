@@ -1,0 +1,5 @@
+To update anything on github
+1- npm run deploy
+2- git .
+3- git commit -m "update build for gh-pages"
+4- git push
