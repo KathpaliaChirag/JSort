@@ -40,7 +40,7 @@
     width: 1%;
     cursor: pointer;
     transform: scale(1);
-    transition: all 0.25s ease 0s;
+    transition: all 1s ease 0s;
 
     background: linear-gradient(0deg,#d4d113 50%,#aad388 85%,#94978d);
     box-shadow: 1px 0 0 0 #c94e10;
