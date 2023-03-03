@@ -1,52 +1,82 @@
 .body{
     display: flex;
     flex-direction: column;
-    background-color: rgb(243, 245, 250);;
+    background-color: none;
+    
 }
 .header{
-    /* margin-top: -23px; */
-    flex-direction: column;
+    flex-direction: row;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #000000;
-    
+    background-color: #7303c0;
+    box-shadow: 2px 2px 2px 2px blue; 
+    display: flex;
+    align-items: center; 
+    min-height: 10vh;
+    min-width: 100%;
 }
 .Logo {
-    height: auto;
-    width: 100px;
-    font-size: ;
-    /* align-items: ; */
-    color: #ffffff;
-    /* background-image: url(/jsort/src/assets/images/logo.png); */
-  }
-
-.Op-buttons{
     position: relative;
-    bottom: 0;
+    height: auto;
+    width: 100px;;
+    color: #ffffff;
 }
 
+.Op-Buttons{
+    min-width: 70%;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+    background-color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #000000;
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    /* background-color: #22c21d; */
+    display: flex;
+    justify-content: space-evenly;
+    /* border-radius: 30%; */
+}
+.button {
+font-size: larger;
+padding: 0;
+border: none;
+background: none;
+/* color: #ffffff; */
+}
+.Op-Buttons :hover {    
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 5px 5px 5px 0px #000000;
+}
 /* content start */
 .Sort-Buttons {
-    width: 100px;
+    /* background: #7303c0; */
+    /* background-color: #ec38bc; */
+    text-decoration: none;
+    font-size: large;
+    width: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: aliceblue;
-    
+    justify-content: space-evenly;
+    /* align-items: center;  */
+    padding-left: 2%;
+}
+.Sort-Buttons :hover {    
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 5px 5px 5px 0px #000000;
 }
 
 .container{
-    /* background-color: #c94e10; */
-    background-color:rgb(243, 245, 250);
-    /* display: flex; */
-    /* position: absolute; */
-    /* top: 50px; */
-    /* left: 100px; */
-    /* bottom: 200px; */
-    /* right: 50px; */
-    /* color: rgb(0, 0, 0); */
-    /* margin-top: 300px; */
-    /* max-height: 50vh; */
-    /* min-height: auto; */
+    background-color: None;
     padding-top: 2%;
     padding-left: 3%;
     min-width: 90vw;
@@ -57,45 +87,29 @@
     justify-content: center;
     perspective: 2500px;
     transform: scale(1);
-    /* margin-top: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px; */
-    /* margin-right: -25px;
-    margin-bottom: 25px; */
-    /* margin-left : 100px; */
     transition: transform 2s ease 0s;
-    /* rgb(243, 245, 250);; */
-}
+    
+   }
 
 .array-bars {
-    /* background-color: rgb(204, 157, 125); */
     width: 1.8px;
     height: 20px; 
     margin: 0 0.5px;
-    /* display: inline-block;  */
-    display: flex; 
-    /* flex-direction: row; */
-    /* align-items: flex-end;  */
-    /* justify-content: center; 
-    height: 85%;
-    /* width: 2px; */
-    /* transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg); 
-    transition: transform 2s ease 2s; */
-     
+    display: flex;   
     height: 59%;
     width: 1%;
     cursor: pointer;
     transform: scale(1);
-    transition: all 1s ease 0s;
-
-    background: linear-gradient(0deg,#d4d113 50%,#aad388 85%,#94978d);
-    box-shadow: 1px 0 0 0 #c94e10;
-    /*animation: progress-bar 5s infinite ease-in; */
-}
+    transition: all 1.2s ease 0s;
+    background: linear-gradient(#7303c0 20%,#ec38bc 65%, #03001e);
+    box-shadow: 1px 1px 1px 1px #000000;
+  }
 
 .array-bars:hover {
-    background-color: rgb(246, 4, 4);
-    size: 120%;
+    background: linear-gradient(#a6e61e 20%,#623702 65%, #af0b31);
+    box-shadow: 3px 3px 3px 3px #000000;
+    /* background-color: rgb(246, 4, 4);? */
+    /* size: 120%; */
  }
 
 /* @keyframes progress-bar  {
